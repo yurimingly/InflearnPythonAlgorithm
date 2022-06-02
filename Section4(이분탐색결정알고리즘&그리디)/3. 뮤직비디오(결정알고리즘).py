@@ -6,8 +6,8 @@ def Count(capacity): #capa=mid
     sum=0 #dvd에 저장되는 노래들을 합
     for x in Music:
         if sum + x > capacity: #새로운 노래를 저장할때 용량을 초과했으면
-            cnt += 1          
-            sum = x          
+            cnt += 1           #이제 새로운 dvd를 꺼내고
+            sum = x            #새로운 sum은 처음부터 해당 x부터 시작(ex.mid가 17이면 12345 끝나고 6부터시작)
         else:
             sum += x
     return cnt
