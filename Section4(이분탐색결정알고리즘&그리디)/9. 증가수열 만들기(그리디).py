@@ -1,7 +1,7 @@
 import sys
 sys.stdin = open("input.txt", "r")
 
-N = int(input())
+n = int(input())
 a = list(map(int,input().split()))
 res = ""
 #index
