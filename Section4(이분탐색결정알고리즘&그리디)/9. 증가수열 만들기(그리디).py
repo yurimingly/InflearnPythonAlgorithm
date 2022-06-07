@@ -19,7 +19,7 @@ while lt <= rt:
     tmp.sort() # 튜플의 첫자료값에 의해 정렬
     if len(tmp) ==0: #더이상가져올 수 없을때
         break
-    else:
+    else: # if a[lt] > last: 또는 if a[rt] > last: 를 타고 tmp에 적재가 된게 끝났을때
         res = res+tmp[0][1] #제일앞의 자료의 'L' 또는 'R'
         last = tmp[0][0] #제일 앞 자료의 숫자
         if tmp[0][1] == 'L': #왼쪽에서 들어가면 
